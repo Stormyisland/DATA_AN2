@@ -1,12 +1,21 @@
 import streamlit as st
+from langchain import verbose
+#from langchain.globals import set_verbose, get_verbose
+
+
+#current_level = verbose.get_level(2)
+#current_level = get_verbose(2)
+
+
 from langchain_community.llms import Ollama
+
 import pandas as pd
 from pandasai import SmartDataframe
 
 llm = Ollama(model="llama3")
 
 
-st.title("Data Analisis with PandasAI")
+st.title("Data Analysis with PandasAI")
 
 uploader_file = st.file_uploader("Upload a CSV file",type =["csv"])
 

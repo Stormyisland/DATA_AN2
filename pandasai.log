@@ -262,3 +262,91 @@ FileNotFoundError: [Errno 2] No such file or directory: 'bitcoin_price_0.csv'
 
 Fix the python code above and return the new python code:
 2024-05-13 07:28:12 [INFO] Executing Step 1: CodeGenerator
+2024-05-13 08:45:04 [INFO] Question: is there a service bc in port alberni
+2024-05-13 08:45:05 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-13 08:45:05 [INFO] Prompt ID: 3c6eb476-1f14-4193-ae00-9c4740a0b2de
+2024-05-13 08:45:05 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-13 08:45:05 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-13 08:45:05 [INFO] Executing Step 1: CacheLookup
+2024-05-13 08:45:05 [INFO] Executing Step 2: PromptGeneration
+2024-05-13 08:45:05 [INFO] Using prompt: <dataframe>
+dfs[0]:65x13
+External Site,Address,Locality,Site_Phone_No,Site_Fax_no,Website_URL,Site_Email,Latitude,Longitude,Office Code,Item Type,Path,Site
+Service BC - 100 Mile House,100-3rd St,Trail,8880456052,5231824448,https://www2.gov.bc.ca/servicebc/vancouver,,49.485542,-119.267754,51,Item,sites/SBC/SD/HD/ROSites/Lists/GA Site Locations,
+Service BC - Ucluelet,343 Lower Ganges Rd,Port Alberni,3994997633,5959336361,http://gov.bc.ca/servicebc/nelson,,52.372311,-123.758102,41,Item,sites/SBC/SD/HD/ROSites/Lists/GA Site Locations,
+Service BC - Quesnel,204 - 6th Ave NW,Nanaimo,3792063621,4245866043,http://gov.bc.ca/servicebc/bellacoola,,49.493191,-123.1233029,84,Item,sites/SBC/SD/HD/ROSites/Lists/GA Site Locations,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ is there a service bc in port alberni
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-13 08:45:05 [INFO] Executing Step 3: CodeGenerator
+2024-05-13 11:37:56 [INFO] Question: what is the address for service BC in Port Alberni
+2024-05-13 11:37:56 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-13 11:37:56 [INFO] Prompt ID: 9bf24d8d-7340-4e47-8ca9-fc1a937341dc
+2024-05-13 11:37:56 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-13 11:37:56 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-13 11:37:56 [INFO] Executing Step 1: CacheLookup
+2024-05-13 11:37:57 [INFO] Executing Step 2: PromptGeneration
+2024-05-13 11:37:57 [INFO] Using prompt: <dataframe>
+dfs[0]:65x13
+External Site,Address,Locality,Site_Phone_No,Site_Fax_no,Website_URL,Site_Email,Latitude,Longitude,Office Code,Item Type,Path,Site
+Service BC - Masset,Suite A - 639 Main St,100 Mile House,1493997562,3192980440,http://gov.bc.ca/servicebc/terrace,,48.941795,-130.322006,46,Item,sites/SBC/SD/HD/ROSites/Lists/GA Site Locations,
+Service BC - Prince George,250 - 455 Columbia St,Maple Ridge,9451577959,4679281024,http://gov.bc.ca/servicebc/deaselake,,49.250038,-119.268257,23,Item,sites/SBC/SD/HD/ROSites/Lists/GA Site Locations,
+Service BC - Nelson,5498 Wharf Avenue,Fort Nelson,7318906913,4292824153,http://gov.bc.ca/servicebc/williamslake,,50.50959,-123.758102,8,Item,sites/SBC/SD/HD/ROSites/Lists/GA Site Locations,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ what is the address for service BC in Port Alberni
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-13 11:37:57 [INFO] Executing Step 3: CodeGenerator
